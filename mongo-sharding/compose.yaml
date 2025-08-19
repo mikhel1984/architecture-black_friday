@@ -1,3 +1,4 @@
+version: "3"
 name: mongo-sharding
 
 services:
@@ -12,8 +13,8 @@ services:
     networks:
       app-network:
         ipv4_address: 173.17.0.10
-    volumes:
-      - config-data:/data/db
+    # volumes:
+    #   - config-data:/data/db
     command:
       [
         "--configsvr",
@@ -38,8 +39,8 @@ services:
     networks:
       app-network:
         ipv4_address: 173.17.0.9
-    volumes:
-      - shard1-data:/data/db
+    # volumes:
+    #   - shard1-data:/data/db
     command:
       [
         "--shardsvr",
@@ -64,8 +65,8 @@ services:
     networks:
       app-network:
         ipv4_address: 173.17.0.8
-    volumes:
-      - shard2-data:/data/db
+    # volumes:
+    #   - shard2-data:/data/db
     command:
       [
         "--shardsvr",
@@ -114,8 +115,10 @@ services:
       - mongos_router
     ports:
       - 8080:8080
+    networks:
+      - app-network
     environment:
-      MONGODB_URL: "mongodb://mongos_router"
+      MONGODB_URL: "mongodb://mongos_router:27020"
       MONGODB_DATABASE_NAME: "somedb"
 
 networks:
@@ -126,7 +129,7 @@ networks:
       config:
         - subnet: 173.17.0.0/16
 
-volumes:
-  config-data:
-  shard1-data:
-  shard2-data:
+# volumes:
+#   config-data:
+#   shard1-data:
+#   shard2-data:
