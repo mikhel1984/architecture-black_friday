@@ -1,0 +1,45 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:141.0) Gecko/20100101 Firefox/141.0" version="28.1.1">
+  <diagram name="Page-1" id="SKAfE--9xHsvevwnDYk5">
+    <mxGraphModel dx="1186" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="_fXYuptUyOR-3NsrTE5i-1" value="shard1-1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="460" y="80" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_fXYuptUyOR-3NsrTE5i-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="_fXYuptUyOR-3NsrTE5i-3" target="_fXYuptUyOR-3NsrTE5i-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="380" y="240" />
+              <mxPoint x="380" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_fXYuptUyOR-3NsrTE5i-3" value="pymongo-api" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_fXYuptUyOR-3NsrTE5i-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="_fXYuptUyOR-3NsrTE5i-3" target="_fXYuptUyOR-3NsrTE5i-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_fXYuptUyOR-3NsrTE5i-5" value="shard2-1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="470" y="310" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_fXYuptUyOR-3NsrTE5i-7" value="shard1-2" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="530" y="30" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_fXYuptUyOR-3NsrTE5i-8" value="shard1-3" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="530" y="120" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_fXYuptUyOR-3NsrTE5i-9" value="shard2-2" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="540" y="265" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_fXYuptUyOR-3NsrTE5i-10" value="shard2-3" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="540" y="355" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_fXYuptUyOR-3NsrTE5i-11" value="Хэшированное шадрирование" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="335" y="80" width="90" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
