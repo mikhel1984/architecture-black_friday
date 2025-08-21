@@ -41,3 +41,7 @@ curl --silent http://ifconfig.me
 - [шардирование](./mongo-sharding/README.md)
 - [шардирование, репликация](./mongo-sharding-repl/README.md)
 - [шардирование, репликация, кэширование](./sharding-repl-cache/README.md)
+
+# Диаграммы
+
+Диаграммы находятся в папке [diagrams](./diagrams).
